@@ -6,6 +6,12 @@
 - Switch between Multiple languages
 - And more...
 
+# Usage:
+
+Run this command in project directory:
+
+`composer install`
+
 > This app is written to learn live wire.
 
 [Laravel](https://laravel.com)
