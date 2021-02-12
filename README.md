@@ -8,9 +8,10 @@
 
 # Usage:
 
-Run this command in project directory:
+First create a database(default database name is: `db_livewire_crud_app`, then run this command in project directory:
 
-`composer install`
+1. `composer install`
+2. `php artisan migrate`
 
 > This app is written to learn livewire.
 
