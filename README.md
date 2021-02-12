@@ -12,7 +12,7 @@ Run this command in project directory:
 
 `composer install`
 
-> This app is written to learn live wire.
+> This app is written to learn livewire.
 
 [Laravel](https://laravel.com)
 
