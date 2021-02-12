@@ -1,0 +1,15 @@
+body {
+    font-family: IRANSansWeb !important;
+}
+
+.has-error {
+    font-size: 10px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.input-box {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
