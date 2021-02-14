@@ -35,11 +35,6 @@ class Students extends Component
         parent::__construct($id);
     }
 
-    public function updatingSearch()
-    {
-        $this->resetPage();
-    }
-
     public function resetInputs()
     {
         $this->ids = '';

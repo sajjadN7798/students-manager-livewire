@@ -27,7 +27,7 @@ return [
         'operation' => 'Operation',
         'edit' => 'Edit',
         'delete' => 'Delete',
-        'searchBy' => 'Search by: ID, Name, Email, Mobile Number...',
+        'searchBy' => 'Search by: ID, Name, Email, Phone number...',
         'noDataFound' => 'No data found'
     ],
 ];
