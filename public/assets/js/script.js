@@ -22,5 +22,5 @@ document.querySelector('.modal').addEventListener('hidden.bs.modal', function ()
 
 function confirmDialog(id) {
     const locale = document.body.getAttribute('data-locale');
-    if (confirm(locale === 'fa' ? 'آیا مطمئن هستید؟' : 'Are your sure?')) lw.emit(`set:destroy`, id);
+    confirm(locale === 'fa' ? 'آیا مطمئن هستید؟' : 'Are your sure?') && lw.emit(`set:destroy`, id);
 }
