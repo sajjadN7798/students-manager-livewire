@@ -16,7 +16,7 @@ class Students extends Component
     public $last_name = '';
     public $email = '';
     public $phone_number = '';
-    public $search = '';
+    public $query = '';
     public $perPage = 10;
     protected $paginationTheme = 'bootstrap';
     protected $listeners = [
@@ -93,13 +93,13 @@ class Students extends Component
     public function render()
     {
         $students = Student::orderBy('id', 'desc');
-        if (strlen($this->search)) {
-            $search = "%$this->search%";
-            $students->where('id', 'like', $search)
-                ->orWhere('first_name', 'like', $search)
-                ->orWhere('last_name', 'like', $search)
-                ->orWhere('email', 'like', $search)
-                ->orWhere('phone_number', 'like', $search);
+        if (strlen($this->query)) {
+            $query = "%$this->query%";
+            $students->where('id', 'like', $query)
+                ->orWhere('first_name', 'like', $query)
+                ->orWhere('last_name', 'like', $query)
+                ->orWhere('email', 'like', $query)
+                ->orWhere('phone_number', 'like', $query);
         }
         $students = $students->paginate($this->perPage);
         return view('livewire.students', [

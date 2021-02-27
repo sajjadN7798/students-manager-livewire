@@ -41,7 +41,7 @@
                                                class="form-label">{{ __('message.attributes.search') }}</label>
                                         <input type="search" class="form-control" id="search"
                                                placeholder="{{__('message.attributes.searchBy')}}"
-                                               wire:model.debounce.500ms="search"/>
+                                               wire:model.debounce.500ms="query"/>
                                     </div>
                                 </form>
                             </div>
