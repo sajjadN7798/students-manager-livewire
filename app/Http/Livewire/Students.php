@@ -30,7 +30,7 @@ class Students extends Component
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', Rule::unique('students', 'email')],
-            'phone_number' => ['required', 'string', Rule::unique('students', 'phone_number')],
+            'phone_number' => ['required', 'numeric', Rule::unique('students', 'phone_number')],
         ];
         parent::__construct($id);
     }
