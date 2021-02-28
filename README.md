@@ -1,4 +1,4 @@
-# Crud application with laravel livewire
+# CRUD application with laravel livewire
 
 #### Some features of this application:
 
